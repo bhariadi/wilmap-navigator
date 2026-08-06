@@ -54,8 +54,24 @@
     .crosshair-h { position: absolute; width: 48px; height: 2px; background-color: rgba(239, 68, 68, 0.8); }
     .crosshair-v { position: absolute; height: 48px; width: 2px; background-color: rgba(239, 68, 68, 0.8); }
 
-    #crosshairCoordBanner { position: absolute; bottom: 16px; left: 50%; transform: translateX(-50%); z-index: 25; background-color: rgba(15, 23, 42, 0.9); border: 1px solid #334155; padding: 6px 14px; border-radius: 20px; font-size: 11px; font-family: monospace; color: #38bdf8; pointer-events: none; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.3); }
-
+    #crosshairCoordBanner { 
+      position: absolute; 
+      bottom: 40px; /* Raised higher to avoid Android bottom browser bars */
+      left: 50%; 
+      transform: translateX(-50%); 
+      z-index: 25; 
+      background-color: rgba(15, 23, 42, 0.95); 
+      border: 1px solid #334155; 
+      padding: 8px 16px; 
+      border-radius: 20px; 
+      font-size: 11px; 
+      font-family: monospace; 
+      color: #38bdf8; 
+      pointer-events: none; 
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.5); 
+      white-space: nowrap;
+    }
+    
     #pinActionBar, #measureActionBar { position: absolute; top: 16px; z-index: 30; display: flex; align-items: center; gap: 8px; background-color: rgba(15, 23, 42, 0.95); border: 1px solid #334155; padding: 10px; border-radius: 12px; }
     .btn-confirm-pin { background-color: #dc2626; color: white; font-weight: bold; font-size: 12px; padding: 8px 16px; border-radius: 8px; border: none; cursor: pointer; }
 
