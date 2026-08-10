@@ -1,4 +1,4 @@
-const CACHE_NAME = 'wilmap-navigator-v3.8.6';
+const CACHE_NAME = 'wilmap-navigator-v3.8.61';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
